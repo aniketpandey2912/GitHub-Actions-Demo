@@ -1,4 +1,4 @@
-name: most starred repo app
+name: Github Action No. 2
 
 on:
   push:
