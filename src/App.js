@@ -8,25 +8,22 @@ import JavaScriptStar from "./Pages/JavaScriptStar";
 function App() {
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
-      <body>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            Home
-          </Route>
-          <Route path="/html" element={<HtmlStar />}>
-            Home
-          </Route>
-          <Route path="/css" element={<CssStar />}>
-            Home
-          </Route>
-          <Route path="/javascript" element={<JavaScriptStar />}>
-            Home
-          </Route>
-        </Routes>
-      </body>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />}>
+          Home
+        </Route>
+        <Route path="/html" element={<HtmlStar />}>
+          Home
+        </Route>
+        <Route path="/css" element={<CssStar />}>
+          Home
+        </Route>
+        <Route path="/javascript" element={<JavaScriptStar />}>
+          Home
+        </Route>
+      </Routes>
     </div>
   );
 }
