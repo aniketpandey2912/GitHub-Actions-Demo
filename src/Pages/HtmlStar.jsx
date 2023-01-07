@@ -1,7 +1,9 @@
 import React from "react";
 
 const HtmlStar = () => {
-  return <div>HtmlStar</div>;
+  return <div style={{ textAlign: "center" }}>
+    <h1>HtmlStar</h1>
+  </div>;
 };
 
 export default HtmlStar;
