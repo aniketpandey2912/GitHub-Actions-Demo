@@ -18,3 +18,11 @@ jobs:
         run: npm ci
       - name: Build Project
         run: npm run build
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
